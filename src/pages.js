@@ -30,7 +30,7 @@ async function pageStudy(req, res) {
             FROM class_schedule
             WHERE class_schedule.class_id = classes.id
             AND class_schedule.weekday = ${filters.weekday}
-            AND class_schedule.time_from <=${timeToMinutes}
+            AND class_schedule.time_from <= ${timeToMinutes}
             AND class_schedule.time_to > ${timeToMinutes}
         )
         AND classes.subject = '${filters.subject}'
@@ -40,6 +40,7 @@ async function pageStudy(req, res) {
     try{
         const db = await Database
         const proffys = await db.all(query)
+        console.log(query)
         return res.render('study.html', { proffys, subjects, filters, weekdays })
 
     } catch(error){
