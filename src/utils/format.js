@@ -28,7 +28,7 @@ const subjects = [
   }
 
   function convertHoursToMinutes(time) {
-      const  [hour, minutes ] =  time.split(':') //separa ex. 09:20 em hour = 09 e minutes = 20 
+      const  [ hour, minutes ] =  time.split(':') //separa ex. 09:20 em hour = 09 e minutes = 20 
       return Number(hour * 60) + Number(minutes) //
   }
   console.log(convertHoursToMinutes("09:00"))
