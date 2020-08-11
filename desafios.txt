@@ -1,0 +1,12 @@
+Desafios
+
+01 - Pagina de Sucesso 
+    * Mostrar pagina de sucesso após cadastro do Proffy
+    * Aguardar 2 segundos na página e redirecionar para a listagem dos proffys, com filtro
+        * usar função setTimeout para aguardar os 2 segundos
+        * location.href = ""
+
+02 - Correção de bugs
+    funcionalidade de apagar o cadastro de um novo horario;
+    Não permitir um novo horario se o horario anterior estiver vazio
+    
